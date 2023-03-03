@@ -1,0 +1,23 @@
+form {
+    margin-top: 18%;
+}
+.main  {
+    justify-content: center;
+}
+.left {
+    float: left;
+}
+.right {
+    float: left;
+    margin-left: 44px;
+}
+#button {
+    align-items: center;
+    margin-top: 15px;
+
+}
+.flex {
+    position: relative;
+    left: 43%;
+   
+}

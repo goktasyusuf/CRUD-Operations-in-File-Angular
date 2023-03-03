@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="d-flex main">
+<form [formGroup]="fileAddForm">
+  <div>
+    <div class="left">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Yeni Şirket Adı</label>
+      <input type="text" class="form-control" formControlName="brandName" id="newBrand" aria-describedby="emailHelp" placeholder="orn:OZZTECH">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Yeni IP Adresi</label>
+      <input type="text" class="form-control" formControlName="ipAddress"  id="newIpAddress" placeholder="orn:95.773.25.36">
+    </div>
+  </div>
+  <div class="right">
+     <div>
+        <label for="exampleInputPassword1">Eski Şirket Adı</label>
+        <input [readOnly]="true" type="text" class="form-control" value="{{oldBrandName}}"  id="oldBrand" placeholder="Eski Marka">
+      </div>
+<br>
+      <div>
+        <label for="exampleInputPassword1">Eski IP Adresi</label>
+        <input [readOnly]="true"  type="text" class="form-control" value="{{oldIpAddress}}"  id="oldIpAddress" placeholder="Eski IP Address">
+      </div> 
+    </div>
+    <br>
+    <div class="flex">
+    <button id="button" (click)="update()" type="submit" class="btn btn-primary">Kaydet</button>
+  </div>
+  </div>
+  </form>
+  </div>
+</div>
